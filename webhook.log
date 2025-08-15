@@ -1,0 +1,1870 @@
+2025-08-06 13:54:56,640 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-06 13:54:56,640 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-06 13:54:56,642 - INFO -  * Restarting with stat
+2025-08-06 13:54:57,267 - WARNING -  * Debugger is active!
+2025-08-06 13:54:57,275 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 13:55:29,329 - INFO - 192.168.4.231 - - [06/Aug/2025 13:55:29] "[33mGET / HTTP/1.1[0m" 404 -
+2025-08-06 13:55:29,945 - INFO - 192.168.4.231 - - [06/Aug/2025 13:55:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-06 13:55:37,839 - INFO - 127.0.0.1 - - [06/Aug/2025 13:55:37] "[31m[1mGET /webhook HTTP/1.1[0m" 405 -
+2025-08-06 13:55:38,067 - INFO - 127.0.0.1 - - [06/Aug/2025 13:55:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-06 13:55:42,482 - INFO - 127.0.0.1 - - [06/Aug/2025 13:55:42] "[33mGET / HTTP/1.1[0m" 404 -
+2025-08-06 13:56:03,271 - INFO - 192.168.4.231 - - [06/Aug/2025 13:56:03] "[33mGET / HTTP/1.1[0m" 404 -
+2025-08-06 13:56:03,473 - INFO - 192.168.4.231 - - [06/Aug/2025 13:56:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-06 13:56:23,640 - INFO - 127.0.0.1 - - [06/Aug/2025 13:56:23] "GET /health HTTP/1.1" 200 -
+2025-08-06 13:56:25,679 - INFO - Webhook received at 2025-08-06 13:56:25
+2025-08-06 13:56:25,679 - INFO - Headers: {'Host': 'localhost:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Source': 'test-script', 'Content-Length': '211'}
+2025-08-06 13:56:25,680 - INFO - Data: {
+  "event_type": "user_created",
+  "user_id": "12345",
+  "username": "test_user",
+  "email": "test@example.com",
+  "timestamp": "2025-08-06T13:56:23.644286",
+  "metadata": {
+    "source": "web_app",
+    "ip_address": "192.168.1.1"
+  }
+}
+2025-08-06 13:56:25,681 - INFO - 127.0.0.1 - - [06/Aug/2025 13:56:25] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 13:56:27,738 - INFO - Webhook received at 2025-08-06 13:56:27
+2025-08-06 13:56:27,739 - INFO - Headers: {'Host': 'localhost:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Api-Key': 'your-secret-api-key-here', 'Content-Length': '103'}
+2025-08-06 13:56:27,739 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-06 13:56:27,740 - INFO - 127.0.0.1 - - [06/Aug/2025 13:56:27] "POST /webhook-secure HTTP/1.1" 200 -
+2025-08-06 14:13:28,611 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 14:13:29,484 - INFO -  * Restarting with stat
+2025-08-06 14:13:30,303 - WARNING -  * Debugger is active!
+2025-08-06 14:13:30,332 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 14:13:35,402 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 14:13:35,468 - INFO -  * Restarting with stat
+2025-08-06 14:13:35,875 - WARNING -  * Debugger is active!
+2025-08-06 14:13:35,881 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 14:13:39,033 - INFO - 127.0.0.1 - - [06/Aug/2025 14:13:39] "GET /health HTTP/1.1" 200 -
+2025-08-06 14:13:39,046 - INFO - Webhook received at 2025-08-06 14:13:39
+2025-08-06 14:13:39,046 - INFO - Headers: {'Host': '192.168.4.231:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Source': 'test-script', 'Content-Length': '211'}
+2025-08-06 14:13:39,047 - INFO - Data: {
+  "event_type": "user_created",
+  "user_id": "12345",
+  "username": "test_user",
+  "email": "test@example.com",
+  "timestamp": "2025-08-06T14:13:39.037380",
+  "metadata": {
+    "source": "web_app",
+    "ip_address": "192.168.1.1"
+  }
+}
+2025-08-06 14:13:39,049 - INFO - 192.168.4.231 - - [06/Aug/2025 14:13:39] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 14:13:41,110 - INFO - Webhook received at 2025-08-06 14:13:41
+2025-08-06 14:13:41,110 - INFO - Headers: {'Host': 'localhost:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Api-Key': 'your-secret-api-key-here', 'Content-Length': '103'}
+2025-08-06 14:13:41,110 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-06 14:13:41,112 - INFO - 127.0.0.1 - - [06/Aug/2025 14:13:41] "POST /webhook-secure HTTP/1.1" 200 -
+2025-08-06 15:49:19,035 - INFO - Webhook received at 2025-08-06 15:49:19
+2025-08-06 15:49:19,038 - INFO - Headers: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.45.0', 'Accept': '*/*', 'Cache-Control': 'no-cache', 'Postman-Token': '30528a06-e227-4602-86ff-b530366ea24e', 'Host': '192.168.4.231:5000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '127'}
+2025-08-06 15:49:19,039 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-06 15:49:19,043 - INFO - 192.168.1.32 - - [06/Aug/2025 15:49:19] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 16:00:03,648 - INFO - Webhook received at 2025-08-06 16:00:03
+2025-08-06 16:00:03,649 - INFO - Headers: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.45.0', 'Accept': '*/*', 'Cache-Control': 'no-cache', 'Postman-Token': '5c2e7f86-d7a3-49d6-a17d-2311ae36c72d', 'Host': '192.168.4.231:5000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '127'}
+2025-08-06 16:00:03,651 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-06 16:00:03,654 - INFO - 192.168.1.32 - - [06/Aug/2025 16:00:03] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 16:04:44,853 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-06 16:04:44,853 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-06 16:04:44,856 - INFO -  * Restarting with stat
+2025-08-06 16:04:45,430 - WARNING -  * Debugger is active!
+2025-08-06 16:04:45,448 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:32:54,827 - INFO - Webhook received at 2025-08-06 16:32:54
+2025-08-06 16:32:54,833 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-61dccbaa87ba9f890361591103d76fd0-9e63f6d1f11744a4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '99'}
+2025-08-06 16:32:54,833 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 16:32:54,834 - ERROR - Error processing webhook: 'list' object has no attribute 'keys'
+2025-08-06 16:32:54,836 - INFO - 192.168.1.32 - - [06/Aug/2025 16:32:54] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
+2025-08-06 16:33:20,194 - INFO - Webhook received at 2025-08-06 16:33:20
+2025-08-06 16:33:20,195 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-bad2d545f2b4cdd907b6f40e28973124-a11237a502befe2f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '99'}
+2025-08-06 16:33:20,196 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 16:33:20,196 - ERROR - Error processing webhook: 'list' object has no attribute 'keys'
+2025-08-06 16:33:20,197 - INFO - 192.168.1.32 - - [06/Aug/2025 16:33:20] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
+2025-08-06 16:39:13,326 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\wh_server.py', reloading
+2025-08-06 16:39:14,120 - INFO -  * Restarting with stat
+2025-08-06 16:39:15,623 - WARNING -  * Debugger is active!
+2025-08-06 16:39:15,650 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:39:45,159 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 16:39:45,328 - INFO -  * Restarting with stat
+2025-08-06 16:39:46,162 - WARNING -  * Debugger is active!
+2025-08-06 16:39:46,168 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:39:47,640 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 16:39:47,682 - INFO -  * Restarting with stat
+2025-08-06 16:39:48,155 - WARNING -  * Debugger is active!
+2025-08-06 16:39:48,158 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:39:56,630 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 16:39:56,691 - INFO -  * Restarting with stat
+2025-08-06 16:39:57,286 - WARNING -  * Debugger is active!
+2025-08-06 16:39:57,290 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:39:59,965 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 16:39:59,998 - INFO -  * Restarting with stat
+2025-08-06 16:40:00,419 - WARNING -  * Debugger is active!
+2025-08-06 16:40:00,422 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:40:04,238 - INFO - 127.0.0.1 - - [06/Aug/2025 16:40:04] "GET /health HTTP/1.1" 200 -
+2025-08-06 16:40:04,244 - INFO - Webhook received at 2025-08-06 16:40:04
+2025-08-06 16:40:04,245 - INFO - Headers: {'Host': '192.168.4.231:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Source': 'test-script', 'Content-Length': '430'}
+2025-08-06 16:40:04,245 - INFO - Data: [
+  {
+    "event_type": "user_created",
+    "user_id": "12345",
+    "username": "test_user1",
+    "email": "test1@example.com",
+    "timestamp": "2025-08-06T16:40:04.240553",
+    "metadata": {
+      "source": "web_app",
+      "ip_address": "192.168.1.1"
+    }
+  },
+  {
+    "event_type": "user_created",
+    "user_id": "67890",
+    "username": "test_user2",
+    "email": "test2@example.com",
+    "timestamp": "2025-08-06T16:40:04.240553",
+    "metadata": {
+      "source": "web_app",
+      "ip_address": "192.168.1.2"
+    }
+  }
+]
+2025-08-06 16:40:04,246 - INFO - 192.168.4.231 - - [06/Aug/2025 16:40:04] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 16:40:06,303 - INFO - Webhook received at 2025-08-06 16:40:06
+2025-08-06 16:40:06,303 - INFO - Headers: {'Host': 'localhost:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Api-Key': 'your-secret-api-key-here', 'Content-Length': '103'}
+2025-08-06 16:40:06,303 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-06 16:40:06,304 - INFO - 127.0.0.1 - - [06/Aug/2025 16:40:06] "POST /webhook-secure HTTP/1.1" 200 -
+2025-08-06 16:40:43,684 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-06 16:40:43,733 - INFO -  * Restarting with stat
+2025-08-06 16:40:44,486 - WARNING -  * Debugger is active!
+2025-08-06 16:40:44,499 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:41:02,401 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\wh_server.py', reloading
+2025-08-06 16:41:02,592 - INFO -  * Restarting with stat
+2025-08-06 16:41:03,293 - WARNING -  * Debugger is active!
+2025-08-06 16:41:03,298 - INFO -  * Debugger PIN: 319-634-860
+2025-08-06 16:41:14,248 - INFO - Webhook received at 2025-08-06 16:41:14
+2025-08-06 16:41:14,249 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-bb4e456e475ebc0328c14f29236fc507-91339590d95a7948-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '99'}
+2025-08-06 16:41:14,250 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 16:41:14,251 - INFO - 192.168.1.32 - - [06/Aug/2025 16:41:14] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 16:45:37,147 - INFO - Webhook received at 2025-08-06 16:45:37
+2025-08-06 16:45:37,147 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-e7813c6c7e1ee4fc5f86459b1b901d2a-6bde44f70e7da94f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '99'}
+2025-08-06 16:45:37,147 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 16:45:37,150 - INFO - 192.168.1.32 - - [06/Aug/2025 16:45:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:00:02,663 - INFO - Webhook received at 2025-08-06 17:00:02
+2025-08-06 17:00:02,666 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-315867d8aea39cf70e6f201817b3dfb2-5863f5eb59fd8bf9-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '124'}
+2025-08-06 17:00:02,666 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "PhysicalStatus": "Good",
+    "LastHistoryStatus": null,
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 17:00:02,669 - INFO - 192.168.1.32 - - [06/Aug/2025 17:00:02] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:07:16,071 - INFO - Webhook received at 2025-08-06 17:07:16
+2025-08-06 17:07:16,072 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-a4c40d38686812fcf4a22984d16aaa32-16f5addda39a7b33-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '128'}
+2025-08-06 17:07:16,073 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  }
+]
+2025-08-06 17:07:16,075 - INFO - 192.168.1.32 - - [06/Aug/2025 17:07:16] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:16:20,768 - INFO - Webhook received at 2025-08-06 17:16:20
+2025-08-06 17:16:20,773 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-c6a516eef09adf05728a1c0388f5ef90-a4cbcbbadad3603c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '255'}
+2025-08-06 17:16:20,775 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  },
+  {
+    "Alias": "862549045380733",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  }
+]
+2025-08-06 17:16:20,778 - INFO - 192.168.1.32 - - [06/Aug/2025 17:16:20] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:16:37,734 - INFO - Webhook received at 2025-08-06 17:16:37
+2025-08-06 17:16:37,735 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-0ef362f88b140353a16447c875c62ba3-c4c480e3ec06aaf3-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '255'}
+2025-08-06 17:16:37,736 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  },
+  {
+    "Alias": "862549045380733",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  }
+]
+2025-08-06 17:16:37,748 - INFO - 192.168.1.32 - - [06/Aug/2025 17:16:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:25:37,268 - INFO - Webhook received at 2025-08-06 17:25:37
+2025-08-06 17:25:37,269 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-b1def39ee026c8d8f0190a6a2685051d-7268ed7f1dc33470-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '255'}
+2025-08-06 17:25:37,282 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  },
+  {
+    "Alias": "862549045380733",
+    "Name": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "PhysicalStatus": "Good",
+    "HistoryDevicePhysical": "Good"
+  }
+]
+2025-08-06 17:25:37,283 - INFO - 192.168.1.32 - - [06/Aug/2025 17:25:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-06 17:42:52,444 - INFO - Webhook received at 2025-08-06 17:42:52
+2025-08-06 17:42:52,446 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-9ae58c109a055c5a9bb88b95c86216e2-74389f83fd0fb932-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '149'}
+2025-08-06 17:42:52,447 - INFO - Data: [
+  {
+    "Alias": "862549045462382",
+    "Name": "PGG Ginno",
+    "HistoryDevicePhysical": []
+  },
+  {
+    "Alias": "862549045380733",
+    "Name": "PGG Ginno",
+    "HistoryDevicePhysical": []
+  }
+]
+2025-08-06 17:42:52,450 - INFO - 192.168.1.32 - - [06/Aug/2025 17:42:52] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:21:15,894 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-07 09:21:15,894 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 09:21:15,894 - INFO -  * Restarting with stat
+2025-08-07 09:21:16,343 - WARNING -  * Debugger is active!
+2025-08-07 09:21:16,367 - INFO -  * Debugger PIN: 319-634-860
+2025-08-07 09:21:29,951 - INFO - Webhook received at 2025-08-07 09:21:29
+2025-08-07 09:21:29,951 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-8a1c236442de9f4bd4b09b4019adbddb-66ca1c9897a75478-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '245'}
+2025-08-07 09:21:30,181 - INFO - 192.168.1.32 - - [07/Aug/2025 09:21:30] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:25:03,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-07 09:25:03,379 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 09:25:03,382 - INFO -  * Restarting with stat
+2025-08-07 09:25:03,800 - WARNING -  * Debugger is active!
+2025-08-07 09:25:03,806 - INFO -  * Debugger PIN: 319-634-860
+2025-08-07 09:25:10,457 - INFO - Webhook received at 2025-08-07 09:25:10
+2025-08-07 09:25:10,457 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-59b87f11a9efa9c6a9587c9cdc2a7b36-8cb24fc9180bfcd7-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '245'}
+2025-08-07 09:25:10,470 - INFO - 192.168.1.32 - - [07/Aug/2025 09:25:10] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:29:52,870 - INFO - Webhook received at 2025-08-07 09:29:52
+2025-08-07 09:29:52,871 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-5ffc3caf94ac4f79aa4aa58c784de51c-fa8f5b6a40b60f22-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '420'}
+2025-08-07 09:29:52,884 - INFO - 192.168.1.32 - - [07/Aug/2025 09:29:52] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:30:25,800 - INFO - Webhook received at 2025-08-07 09:30:25
+2025-08-07 09:30:25,800 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-09f4b0377ae9231d340447e409e336b9-6d7876f32ba1671f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '420'}
+2025-08-07 09:30:25,804 - INFO - 192.168.1.32 - - [07/Aug/2025 09:30:25] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:30:50,474 - INFO - Webhook received at 2025-08-07 09:30:50
+2025-08-07 09:30:50,475 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-179a6ef10b7931ba11cfe450c3104a2f-dc1b626dfa73949e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '420'}
+2025-08-07 09:30:50,485 - INFO - 192.168.1.32 - - [07/Aug/2025 09:30:50] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:39:04,298 - INFO - Webhook received at 2025-08-07 09:39:04
+2025-08-07 09:39:04,299 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-2ccf587f4824b4e6240797d7ade664ef-595cc55073917f09-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 09:39:04,311 - INFO - 192.168.1.32 - - [07/Aug/2025 09:39:04] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 09:55:29,880 - INFO - Webhook received at 2025-08-07 09:55:29
+2025-08-07 09:55:29,881 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-d7350953511b03a29dfc8c6365ee6ebd-67df03ed78911ef1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 09:55:29,890 - INFO - 192.168.1.32 - - [07/Aug/2025 09:55:29] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 10:06:08,843 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-07 10:06:08,844 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 10:06:08,846 - INFO -  * Restarting with stat
+2025-08-07 10:06:09,240 - WARNING -  * Debugger is active!
+2025-08-07 10:06:09,263 - INFO -  * Debugger PIN: 319-634-860
+2025-08-07 10:06:12,357 - INFO - Webhook received at 2025-08-07 10:06:12
+2025-08-07 10:06:12,358 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-68e7dc70b77183afc6739d2086558564-a48056dd22b8e59d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 10:06:12,379 - INFO - 192.168.1.32 - - [07/Aug/2025 10:06:12] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 10:10:31,841 - INFO - Webhook received at 2025-08-07 10:10:31
+2025-08-07 10:10:31,842 - INFO - Headers: {'Host': '192.168.4.231:5000', 'X-Api-Key': 'your-secret-api-key-here', 'Traceparent': '00-8b70ac110431150763c142cc37a78140-5b492a7d3bb13a31-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 10:10:31,849 - INFO - 192.168.1.32 - - [07/Aug/2025 10:10:31] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 10:18:06,507 - INFO - Webhook received at 2025-08-07 10:18:06
+2025-08-07 10:18:06,507 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-bc06c4380dc21279272e001036962d2a-b48d4d352720d128-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 10:18:06,513 - INFO - 192.168.1.32 - - [07/Aug/2025 10:18:06] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 10:18:22,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-07 10:18:22,888 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 10:18:22,894 - INFO -  * Restarting with stat
+2025-08-07 10:18:23,365 - WARNING -  * Debugger is active!
+2025-08-07 10:18:23,374 - INFO -  * Debugger PIN: 319-634-860
+2025-08-07 10:26:38,870 - INFO - Webhook received at 2025-08-07 10:26:38
+2025-08-07 10:26:38,870 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-8edd2cf44aaf6af6c545359db7a0b6fc-d2276f8bd8585122-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 10:26:38,900 - INFO - 192.168.1.32 - - [07/Aug/2025 10:26:38] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 11:10:34,457 - INFO - Webhook received at 2025-08-07 11:10:34
+2025-08-07 11:10:34,463 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-a55cf4a5562678515cb1bc3b4ff22752-47c823a6c9ce89ae-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 11:10:34,493 - INFO - 192.168.1.32 - - [07/Aug/2025 11:10:34] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 11:12:42,409 - INFO - Webhook received at 2025-08-07 11:12:42
+2025-08-07 11:12:42,409 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-e8b87074bf958953fc3c09758060bdfa-8fb7e098fe5f7a46-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 11:12:42,419 - INFO - 192.168.1.32 - - [07/Aug/2025 11:12:42] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:03:52,230 - INFO - Webhook received at 2025-08-07 13:03:52
+2025-08-07 13:03:52,237 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-bbe9f656431bbfd61249f6632fb48bb6-4b8fc04a2418e85f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '316'}
+2025-08-07 13:03:52,253 - INFO - 192.168.1.32 - - [07/Aug/2025 13:03:52] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:11:29,932 - INFO - Webhook received at 2025-08-07 13:11:29
+2025-08-07 13:11:29,932 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-9c47d4105c2c9672ab112c656fd3db41-a99e3b5895ccd7d2-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '124'}
+2025-08-07 13:11:29,947 - INFO - 192.168.1.32 - - [07/Aug/2025 13:11:29] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:33:50,045 - INFO - Webhook received at 2025-08-07 13:33:50
+2025-08-07 13:33:50,047 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-2d582eca609b66be4d87699ace3ca291-b1813231b4017f24-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '124'}
+2025-08-07 13:33:50,061 - INFO - 192.168.1.32 - - [07/Aug/2025 13:33:50] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:37:28,021 - INFO - Webhook received at 2025-08-07 13:37:28
+2025-08-07 13:37:28,022 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-ca2f96b528d86e01885c94e0af97d615-f727f26f806e0cee-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '256'}
+2025-08-07 13:37:28,037 - INFO - 192.168.1.32 - - [07/Aug/2025 13:37:28] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:38:38,108 - INFO - Webhook received at 2025-08-07 13:38:38
+2025-08-07 13:38:38,108 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-5fce6263b36760d97511e1c72bf6791f-1162c85b496a3643-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-07 13:38:38,128 - INFO - 192.168.1.32 - - [07/Aug/2025 13:38:38] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 13:40:14,907 - INFO - Webhook received at 2025-08-07 13:40:14
+2025-08-07 13:40:14,908 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-3ee8a757bebf251d897a4522c2aa529c-de70cf7d7afe4854-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-07 13:40:14,921 - INFO - 192.168.1.32 - - [07/Aug/2025 13:40:14] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 15:27:37,978 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-07 15:27:37,981 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-07 15:27:37,988 - INFO -  * Restarting with stat
+2025-08-07 15:27:38,492 - WARNING -  * Debugger is active!
+2025-08-07 15:27:38,514 - INFO -  * Debugger PIN: 319-634-860
+2025-08-07 15:28:18,899 - INFO - Webhook received at 2025-08-07 15:28:18
+2025-08-07 15:28:18,900 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-cbc40abf0ab79ae093539d0e88836f8e-c908a208c63fc620-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 15:28:19,342 - INFO - 192.168.1.32 - - [07/Aug/2025 15:28:19] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 15:28:37,808 - INFO - Webhook received at 2025-08-07 15:28:37
+2025-08-07 15:28:37,809 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-9df34d041832a86179e5653960f8f085-036700dbf0ef49aa-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-07 15:28:37,822 - INFO - 192.168.1.32 - - [07/Aug/2025 15:28:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 15:30:42,466 - INFO - Webhook received at 2025-08-07 15:30:42
+2025-08-07 15:30:42,467 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-9d48b7436639f0bcaf9202da874e3565-9cdc192fe70bd46d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-07 15:30:42,476 - INFO - 192.168.1.32 - - [07/Aug/2025 15:30:42] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 15:30:50,992 - INFO - Webhook received at 2025-08-07 15:30:50
+2025-08-07 15:30:50,993 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-6cf527a1935fac7ffc14a463d4eaaa86-8d79072b2a106cc1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-07 15:30:51,004 - INFO - 192.168.1.32 - - [07/Aug/2025 15:30:51] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 15:57:24,708 - INFO - Webhook received at 2025-08-07 15:57:24
+2025-08-07 15:57:24,715 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-08a8b26bad6062038ca1a812d1ff3df0-7dd58511325e81d9-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '245'}
+2025-08-07 15:57:24,728 - INFO - 192.168.1.32 - - [07/Aug/2025 15:57:24] "POST /webhook HTTP/1.1" 200 -
+2025-08-07 17:27:07,750 - INFO - Webhook received at 2025-08-07 17:27:07
+2025-08-07 17:27:07,758 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-983f6adf3454870ea7e21e94de408fbf-54c4783e49f6646a-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '134'}
+2025-08-07 17:27:07,772 - INFO - 192.168.1.32 - - [07/Aug/2025 17:27:07] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:09:48,484 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.231:5000
+2025-08-08 10:09:48,485 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-08 10:09:48,487 - INFO -  * Restarting with stat
+2025-08-08 10:09:48,961 - WARNING -  * Debugger is active!
+2025-08-08 10:09:48,981 - INFO -  * Debugger PIN: 319-634-860
+2025-08-08 10:09:57,212 - INFO - Webhook received at 2025-08-08 10:09:57
+2025-08-08 10:09:57,212 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-76b4e6db74e97f0a0454b527aac42206-c725c1ddcf69ab95-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 10:09:57,399 - INFO - 192.168.1.32 - - [08/Aug/2025 10:09:57] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:13:12,934 - INFO - Webhook received at 2025-08-08 10:13:12
+2025-08-08 10:13:12,935 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-d806de34ec5e9bff6f2b56d98c64a951-a72cf7864e29dee2-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 10:13:12,946 - INFO - 192.168.1.32 - - [08/Aug/2025 10:13:12] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:13:47,525 - INFO - Webhook received at 2025-08-08 10:13:47
+2025-08-08 10:13:47,526 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-5bca8b158a8589f4a9aeed9cb506c9c5-b397685f775489d0-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '201'}
+2025-08-08 10:13:47,535 - INFO - 192.168.1.32 - - [08/Aug/2025 10:13:47] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:14:05,555 - INFO - Webhook received at 2025-08-08 10:14:05
+2025-08-08 10:14:05,555 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-ac773275e3cba6f29e8720e5be80d38a-524d616061688cf1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 10:14:05,574 - INFO - 192.168.1.32 - - [08/Aug/2025 10:14:05] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:14:15,218 - INFO - Webhook received at 2025-08-08 10:14:15
+2025-08-08 10:14:15,219 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-d9726655224538d35f4343b7853f693a-277d0fc513b89454-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '206'}
+2025-08-08 10:14:15,227 - INFO - 192.168.1.32 - - [08/Aug/2025 10:14:15] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:14:19,381 - INFO - Webhook received at 2025-08-08 10:14:19
+2025-08-08 10:14:19,381 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-7be555030302a148f25811984d1ceb56-718b689d4a7a3b24-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '206'}
+2025-08-08 10:14:19,390 - INFO - 192.168.1.32 - - [08/Aug/2025 10:14:19] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:14:28,932 - INFO - Webhook received at 2025-08-08 10:14:28
+2025-08-08 10:14:28,933 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-3234831c48c85868f424a4ead3c4a93f-1d0c48b5056c10fb-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 10:14:28,943 - INFO - 192.168.1.32 - - [08/Aug/2025 10:14:28] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 10:22:21,363 - INFO - Webhook received at 2025-08-08 10:22:21
+2025-08-08 10:22:21,365 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-79c78de65965d68c6c23b692a1bf7d42-11d37d0354688460-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 10:22:21,375 - INFO - 192.168.1.32 - - [08/Aug/2025 10:22:21] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 11:25:27,318 - INFO - Webhook received at 2025-08-08 11:25:27
+2025-08-08 11:25:27,323 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-a9e0ceced8243a311ea180308c41b747-1ce86f96abea6886-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 11:25:27,345 - INFO - 192.168.1.32 - - [08/Aug/2025 11:25:27] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 13:45:23,494 - INFO - Webhook received at 2025-08-08 13:45:23
+2025-08-08 13:45:23,502 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-08ac98c2be3818393decc805e7997f24-b1c409702af57d13-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-08 13:45:23,520 - INFO - 192.168.1.32 - - [08/Aug/2025 13:45:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 13:45:43,410 - INFO - Webhook received at 2025-08-08 13:45:43
+2025-08-08 13:45:43,410 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-9dfc79ddb259a994c486b5f14bda1d76-a68a539e9d11971f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-08 13:45:43,421 - INFO - 192.168.1.32 - - [08/Aug/2025 13:45:43] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 13:46:16,247 - INFO - Webhook received at 2025-08-08 13:46:16
+2025-08-08 13:46:16,247 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-0705372678ee10ce893642f9219a00d6-11a1445f9f5b7370-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-08 13:46:16,252 - INFO - 192.168.1.32 - - [08/Aug/2025 13:46:16] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 13:46:31,204 - INFO - Webhook received at 2025-08-08 13:46:31
+2025-08-08 13:46:31,207 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-a0e0331fbf84a833db07d7351d6521c2-d057402786e5beeb-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-08 13:46:31,236 - INFO - 192.168.1.32 - - [08/Aug/2025 13:46:31] "POST /webhook HTTP/1.1" 200 -
+2025-08-08 13:46:41,198 - INFO - Webhook received at 2025-08-08 13:46:41
+2025-08-08 13:46:41,198 - INFO - Headers: {'Host': '192.168.4.231:5000', 'Traceparent': '00-4280ca325de23bf436e16fcfda7b8860-5b1bc1210f54b38b-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '306'}
+2025-08-08 13:46:41,237 - INFO - 192.168.1.32 - - [08/Aug/2025 13:46:41] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:20:13,235 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-11 14:20:13,237 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:20:13,240 - INFO -  * Restarting with stat
+2025-08-11 14:20:13,700 - WARNING -  * Debugger is active!
+2025-08-11 14:20:13,722 - INFO -  * Debugger PIN: 319-634-860
+2025-08-11 14:23:48,879 - INFO - 127.0.0.1 - - [11/Aug/2025 14:23:48] "GET /health HTTP/1.1" 200 -
+2025-08-11 14:24:00,953 - INFO - Webhook received at 2025-08-11 14:24:00
+2025-08-11 14:24:00,955 - INFO - Headers: {'Host': 'localhost:5000', 'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'X-Api-Key': 'your-secret-api-key-here', 'Content-Length': '103'}
+2025-08-11 14:24:00,960 - INFO - Data: {
+  "event_type": "payment_completed",
+  "transaction_id": "txn_123456",
+  "amount": 100.0,
+  "currency": "VND"
+}
+2025-08-11 14:24:00,961 - INFO - 127.0.0.1 - - [11/Aug/2025 14:24:00] "POST /webhook-secure HTTP/1.1" 200 -
+2025-08-11 14:37:04,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-11 14:37:04,529 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 14:37:04,532 - INFO -  * Restarting with stat
+2025-08-11 14:37:04,955 - WARNING -  * Debugger is active!
+2025-08-11 14:37:04,965 - INFO -  * Debugger PIN: 319-634-860
+2025-08-11 14:39:16,506 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\test_webhook.py', reloading
+2025-08-11 14:39:16,631 - INFO -  * Restarting with stat
+2025-08-11 14:39:17,123 - WARNING -  * Debugger is active!
+2025-08-11 14:39:17,127 - INFO -  * Debugger PIN: 319-634-860
+2025-08-11 14:39:50,987 - ERROR - Error processing webhook: 400 Bad Request: Failed to decode JSON object: Expecting value: line 1 column 1 (char 0)
+2025-08-11 14:39:50,988 - INFO - 192.168.1.32 - - [11/Aug/2025 14:39:50] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
+2025-08-11 14:40:06,040 - INFO - Webhook received at 2025-08-11 14:40:06
+2025-08-11 14:40:06,040 - INFO - Headers: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.45.0', 'Accept': '*/*', 'Cache-Control': 'no-cache', 'Postman-Token': 'cebb2af9-b847-4d09-8ea5-fb9b2e85ec21', 'Host': '192.168.4.229:5000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '273'}
+2025-08-11 14:40:06,041 - INFO - Data: {
+  "event_type": "user_created",
+  "user_id": "12345",
+  "username": "test_user1",
+  "email": "test1@example.com",
+  "timestamp": "2025-08-11T14:23:48.882794",
+  "metadata": {
+    "source": "web_app",
+    "ip_address": "192.168.1.1"
+  }
+}
+2025-08-11 14:40:06,042 - INFO - 192.168.1.32 - - [11/Aug/2025 14:40:06] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:45:46,179 - INFO - Webhook received at 2025-08-11 14:45:46
+2025-08-11 14:45:46,180 - INFO - Headers: {'Content-Type': 'application/json', 'User-Agent': 'PostmanRuntime/7.45.0', 'Accept': '*/*', 'Cache-Control': 'no-cache', 'Postman-Token': '9f8126e3-26be-44b8-97e7-69ee3ec1fc42', 'Host': '192.168.4.229:5000', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive', 'Content-Length': '273'}
+2025-08-11 14:45:46,183 - INFO - Data: {
+  "event_type": "user_created",
+  "user_id": "12345",
+  "username": "test_user1",
+  "email": "test1@example.com",
+  "timestamp": "2025-08-11T14:23:48.882794",
+  "metadata": {
+    "source": "web_app",
+    "ip_address": "192.168.1.1"
+  }
+}
+2025-08-11 14:45:46,184 - INFO - 192.168.1.32 - - [11/Aug/2025 14:45:46] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:48:52,962 - INFO - Webhook received at 2025-08-11 14:48:52
+2025-08-11 14:48:52,962 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-d17c441eae766fe1e631f4cfbd03166c-531cc81a89968d62-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 14:48:53,274 - INFO - 192.168.1.32 - - [11/Aug/2025 14:48:53] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:49:10,374 - INFO - Webhook received at 2025-08-11 14:49:10
+2025-08-11 14:49:10,375 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-5cf0c0477cff1bea70a417a86fb23af5-2ec3f90a13ffb3b1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 14:49:10,386 - INFO - 192.168.1.32 - - [11/Aug/2025 14:49:10] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:50:22,613 - INFO - Webhook received at 2025-08-11 14:50:22
+2025-08-11 14:50:22,615 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-d18be5a58afbd29f51f094a2363cfbb8-ff964cd6e71924e2-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1086'}
+2025-08-11 14:50:22,626 - INFO - 192.168.1.32 - - [11/Aug/2025 14:50:22] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 14:53:45,837 - INFO - Webhook received at 2025-08-11 14:53:45
+2025-08-11 14:53:45,838 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-ec5d04cc36c142a6540ce20186631feb-50b3a335b74ce7a6-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '428'}
+2025-08-11 14:53:45,846 - INFO - 192.168.1.32 - - [11/Aug/2025 14:53:45] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:00:51,013 - INFO - Webhook received at 2025-08-11 15:00:51
+2025-08-11 15:00:51,022 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-2269f7fd1f312ae96afc130fc654aba5-5e69c1ae22f87544-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '199'}
+2025-08-11 15:00:51,039 - INFO - 192.168.1.32 - - [11/Aug/2025 15:00:51] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:01:42,334 - INFO - Webhook received at 2025-08-11 15:01:42
+2025-08-11 15:01:42,335 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-ccf44c2edf258c4189761137ff2732dd-1e6ee1730f24565d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1086'}
+2025-08-11 15:01:42,358 - INFO - 192.168.1.32 - - [11/Aug/2025 15:01:42] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:07:37,299 - INFO - Webhook received at 2025-08-11 15:07:37
+2025-08-11 15:07:37,300 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-c52a55469b7e08d6d6edce2ffb255a47-8e54ad8f7d9be648-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 15:07:37,305 - INFO - 192.168.1.32 - - [11/Aug/2025 15:07:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:08:16,863 - INFO - Webhook received at 2025-08-11 15:08:16
+2025-08-11 15:08:16,864 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bd97af7d0ca49cde77bc73faa64822e1-4d9e14b62aa6f243-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-11 15:08:16,879 - INFO - 192.168.1.32 - - [11/Aug/2025 15:08:16] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:08:21,173 - INFO - Webhook received at 2025-08-11 15:08:21
+2025-08-11 15:08:21,173 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-98b8e48279ee87e4017c16ea06dc986b-79f7f4cc99c97728-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '489'}
+2025-08-11 15:08:21,183 - INFO - 192.168.1.32 - - [11/Aug/2025 15:08:21] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:08:29,122 - INFO - Webhook received at 2025-08-11 15:08:29
+2025-08-11 15:08:29,122 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-22b4df5489fd1fca1d71db94679c7549-51616a0e24de430a-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '489'}
+2025-08-11 15:08:29,129 - INFO - 192.168.1.32 - - [11/Aug/2025 15:08:29] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:29:39,875 - INFO - Webhook received at 2025-08-11 15:29:39
+2025-08-11 15:29:39,883 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-8a36eefb687e6ac6cd6c357e7382f639-973da68c8ac64728-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 15:29:39,897 - INFO - 192.168.1.32 - - [11/Aug/2025 15:29:39] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:30:19,350 - INFO - Webhook received at 2025-08-11 15:30:19
+2025-08-11 15:30:19,350 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-205c4b7676826a99ed493aaea0932a16-6ae0e97f61603505-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1086'}
+2025-08-11 15:30:19,355 - INFO - 192.168.1.32 - - [11/Aug/2025 15:30:19] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:31:50,619 - INFO - Webhook received at 2025-08-11 15:31:50
+2025-08-11 15:31:50,619 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-c363bb3ed7508f2cd9af03aff89f5184-75158f54d515ef87-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 15:31:50,632 - INFO - 192.168.1.32 - - [11/Aug/2025 15:31:50] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:49:18,323 - INFO - Webhook received at 2025-08-11 15:49:18
+2025-08-11 15:49:18,325 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-73363a4f67454b42fb5032bce674057d-026664d6ab2b0bd4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 15:49:18,334 - INFO - 192.168.1.32 - - [11/Aug/2025 15:49:18] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:49:36,546 - INFO - Webhook received at 2025-08-11 15:49:36
+2025-08-11 15:49:36,546 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-29cef003b83cec463285218ecd67cd39-367de62f966b6e92-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '266'}
+2025-08-11 15:49:36,553 - INFO - 192.168.1.32 - - [11/Aug/2025 15:49:36] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 15:50:01,822 - INFO - Webhook received at 2025-08-11 15:50:01
+2025-08-11 15:50:01,823 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-10184e0b9b2af5b2a3f02b2a8db7eec9-04b9769ce20cc3e0-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '489'}
+2025-08-11 15:50:01,833 - INFO - 192.168.1.32 - - [11/Aug/2025 15:50:01] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:10:24,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-11 17:10:24,379 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-11 17:10:24,382 - INFO -  * Restarting with stat
+2025-08-11 17:10:24,921 - WARNING -  * Debugger is active!
+2025-08-11 17:10:24,926 - INFO -  * Debugger PIN: 319-634-860
+2025-08-11 17:10:37,824 - INFO - Webhook received at 2025-08-11 17:10:37
+2025-08-11 17:10:37,825 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-465f829c77d9feb99fa31dde96612e61-6ce7f2b5dc650d6d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '550'}
+2025-08-11 17:10:37,865 - INFO - 192.168.1.32 - - [11/Aug/2025 17:10:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:11:16,176 - INFO - Webhook received at 2025-08-11 17:11:16
+2025-08-11 17:11:16,176 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e7dadbaa484ffb138acd95fd4b8b080c-d806a33a8124310e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '550'}
+2025-08-11 17:11:16,189 - INFO - 192.168.1.32 - - [11/Aug/2025 17:11:16] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:11:26,648 - INFO - Webhook received at 2025-08-11 17:11:26
+2025-08-11 17:11:26,649 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-cd8048b970e3cee08902c3bd53b8f4c8-f277846c1dbbcd35-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '550'}
+2025-08-11 17:11:26,659 - INFO - 192.168.1.32 - - [11/Aug/2025 17:11:26] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:13:50,678 - INFO - Webhook received at 2025-08-11 17:13:50
+2025-08-11 17:13:50,690 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-283fdbcf55c7d926e70e5d3f3f330289-a685b47996c08a04-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '550'}
+2025-08-11 17:13:50,703 - INFO - 192.168.1.32 - - [11/Aug/2025 17:13:50] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:14:46,393 - INFO - Webhook received at 2025-08-11 17:14:46
+2025-08-11 17:14:46,394 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-dc176cc0b0273c20f5939b798a2acf48-09edd43dbf02910d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '611'}
+2025-08-11 17:14:46,407 - INFO - 192.168.1.32 - - [11/Aug/2025 17:14:46] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:15:08,566 - INFO - Webhook received at 2025-08-11 17:15:08
+2025-08-11 17:15:08,567 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-fead4f3755aa01ed9a660fc44580de2d-66c99aa0793658c4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '611'}
+2025-08-11 17:15:08,577 - INFO - 192.168.1.32 - - [11/Aug/2025 17:15:08] "POST /webhook HTTP/1.1" 200 -
+2025-08-11 17:17:23,219 - INFO - Webhook received at 2025-08-11 17:17:23
+2025-08-11 17:17:23,220 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-fa88bfbd190858154ff2576dea1f6986-ec8e4f642f306c59-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-11 17:17:23,234 - INFO - 192.168.1.32 - - [11/Aug/2025 17:17:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:19:25,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-12 09:19:25,567 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 09:19:25,569 - INFO -  * Restarting with stat
+2025-08-12 09:19:26,182 - WARNING -  * Debugger is active!
+2025-08-12 09:19:26,207 - INFO -  * Debugger PIN: 319-634-860
+2025-08-12 09:20:25,298 - INFO - Webhook received at 2025-08-12 09:20:25
+2025-08-12 09:20:25,298 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-019c73ba0252239c34014f97ca6ff567-d09ab1e1e8a1ae92-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '611'}
+2025-08-12 09:20:25,310 - INFO - 192.168.1.32 - - [12/Aug/2025 09:20:25] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:22:53,822 - INFO - Webhook received at 2025-08-12 09:22:53
+2025-08-12 09:22:53,822 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-7fe0884f071eef876933cfd5b951c70d-37d12c24b91db442-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '672'}
+2025-08-12 09:22:53,835 - INFO - 192.168.1.32 - - [12/Aug/2025 09:22:53] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:23:23,426 - INFO - Webhook received at 2025-08-12 09:23:23
+2025-08-12 09:23:23,427 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-b8e00fe517fbb37445a4007ad80c9d32-e4075dd9543fe1fc-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '672'}
+2025-08-12 09:23:23,437 - INFO - 192.168.1.32 - - [12/Aug/2025 09:23:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:32:40,878 - INFO - Webhook received at 2025-08-12 09:32:40
+2025-08-12 09:32:40,879 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-6f3ffb970987529a113d14998a90595b-a216dc0358f954b0-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '672'}
+2025-08-12 09:32:40,893 - INFO - 192.168.1.32 - - [12/Aug/2025 09:32:40] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:33:04,201 - INFO - Webhook received at 2025-08-12 09:33:04
+2025-08-12 09:33:04,201 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-86e2bf0833ebed2b4b4e499d00229179-f307d32814633c66-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '733'}
+2025-08-12 09:33:04,228 - INFO - 192.168.1.32 - - [12/Aug/2025 09:33:04] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:40:20,840 - INFO - Webhook received at 2025-08-12 09:40:20
+2025-08-12 09:40:20,841 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-a40713154d5c303d2d45254c404a0cf7-f8d2eeb84f031d26-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '794'}
+2025-08-12 09:40:20,851 - INFO - 192.168.1.32 - - [12/Aug/2025 09:40:20] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:41:02,522 - INFO - Webhook received at 2025-08-12 09:41:02
+2025-08-12 09:41:02,523 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-0881c3789cc368fe78b545e740f35283-811084c5b3abf576-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '855'}
+2025-08-12 09:41:02,535 - INFO - 192.168.1.32 - - [12/Aug/2025 09:41:02] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:44:17,507 - INFO - Webhook received at 2025-08-12 09:44:17
+2025-08-12 09:44:17,507 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-9c96f137898e0d1dad4cc17b95e92931-88feee4075744380-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '916'}
+2025-08-12 09:44:17,513 - INFO - 192.168.1.32 - - [12/Aug/2025 09:44:17] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:55:05,834 - INFO - Webhook received at 2025-08-12 09:55:05
+2025-08-12 09:55:05,834 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-b4dd573a06addcb96cdc2beb1fd21e3a-77ba5b645e9dd349-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1099'}
+2025-08-12 09:55:05,847 - INFO - 192.168.1.32 - - [12/Aug/2025 09:55:05] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 09:57:09,267 - INFO - Webhook received at 2025-08-12 09:57:09
+2025-08-12 09:57:09,268 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bf91b21c03099a65a14aeb63f8e9e0ba-d2692f82fc0f9b0f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '184'}
+2025-08-12 09:57:09,281 - INFO - 192.168.1.32 - - [12/Aug/2025 09:57:09] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:04:50,253 - INFO - Webhook received at 2025-08-12 10:04:50
+2025-08-12 10:04:50,255 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-b2092caad6fb3891cb2f0830cbcc3bde-7e62b6cf518659f1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '245'}
+2025-08-12 10:04:50,265 - INFO - 192.168.1.32 - - [12/Aug/2025 10:04:50] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:14:19,826 - INFO - Webhook received at 2025-08-12 10:14:19
+2025-08-12 10:14:19,826 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bfbb3e8b44fd9421c81958be0d22b535-304097a93fe74fbc-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '306'}
+2025-08-12 10:14:19,834 - INFO - 192.168.1.32 - - [12/Aug/2025 10:14:19] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:20:56,624 - INFO - Webhook received at 2025-08-12 10:20:56
+2025-08-12 10:20:56,625 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-5c9c0d54f286e08534c5b11457a5b46c-a49074063b9d0483-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '367'}
+2025-08-12 10:20:56,648 - INFO - 192.168.1.32 - - [12/Aug/2025 10:20:56] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:21:22,410 - INFO - Webhook received at 2025-08-12 10:21:22
+2025-08-12 10:21:22,410 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e59d01dc31feddfbfc2c416feb12d638-2faf13c52649cc15-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '428'}
+2025-08-12 10:21:22,429 - INFO - 192.168.1.32 - - [12/Aug/2025 10:21:22] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:30:00,287 - INFO - Webhook received at 2025-08-12 10:30:00
+2025-08-12 10:30:00,288 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bd954bc7f87394a4f8a045c7ccfc40f5-23b33e08b29c88e3-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '184'}
+2025-08-12 10:30:00,294 - INFO - 192.168.1.32 - - [12/Aug/2025 10:30:00] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:31:38,688 - INFO - Webhook received at 2025-08-12 10:31:38
+2025-08-12 10:31:38,690 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-6b3fa0d13c18a030ea3fa972c033046b-2be4519772383213-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '245'}
+2025-08-12 10:31:38,702 - INFO - 192.168.1.32 - - [12/Aug/2025 10:31:38] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:36:11,493 - INFO - Webhook received at 2025-08-12 10:36:11
+2025-08-12 10:36:11,494 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-fe2a0d57659127fa1d295440d9afe922-bc0488b78aafc77c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '306'}
+2025-08-12 10:36:11,515 - INFO - 192.168.1.32 - - [12/Aug/2025 10:36:11] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:42:27,762 - INFO - Webhook received at 2025-08-12 10:42:27
+2025-08-12 10:42:27,762 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e5c29fa4e3878d1775456d9fddbb71e4-1d470059e3fc1509-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '428'}
+2025-08-12 10:42:27,777 - INFO - 192.168.1.32 - - [12/Aug/2025 10:42:27] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:52:23,649 - INFO - Webhook received at 2025-08-12 10:52:23
+2025-08-12 10:52:23,651 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-d2b73acf1a6fb7c302e29022f7bc024c-41c79d4330555ff8-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '428'}
+2025-08-12 10:52:23,663 - INFO - 192.168.1.32 - - [12/Aug/2025 10:52:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 10:53:04,390 - INFO - Webhook received at 2025-08-12 10:53:04
+2025-08-12 10:53:04,390 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-ec26cc4065ffe7a6405a7a6135f0e1fb-a3f4484d793ff36e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '550'}
+2025-08-12 10:53:04,410 - INFO - 192.168.1.32 - - [12/Aug/2025 10:53:04] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:34:12,553 - INFO - Webhook received at 2025-08-12 11:34:12
+2025-08-12 11:34:12,558 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-7d0a0d3dc053d717053d67af45705ab8-f2202305d441d945-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:34:12,572 - INFO - 192.168.1.32 - - [12/Aug/2025 11:34:12] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:35:38,076 - INFO - Webhook received at 2025-08-12 11:35:38
+2025-08-12 11:35:38,076 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-0d54316fd4e9f1a6f910a4efda2208b5-6335a3c3fb0b0df0-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:35:38,089 - INFO - 192.168.1.32 - - [12/Aug/2025 11:35:38] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:37:20,573 - INFO - Webhook received at 2025-08-12 11:37:20
+2025-08-12 11:37:20,574 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-4f4a2836130fee7459002bc9fe971b70-ec35bf3d61655555-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:37:20,579 - INFO - 192.168.1.32 - - [12/Aug/2025 11:37:20] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:40:02,454 - INFO - Webhook received at 2025-08-12 11:40:02
+2025-08-12 11:40:02,455 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-2e415e83b2b241ad64dbacdc93c55606-779614d7d5c38772-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:40:02,458 - INFO - 192.168.1.32 - - [12/Aug/2025 11:40:02] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:42:27,051 - INFO - Webhook received at 2025-08-12 11:42:27
+2025-08-12 11:42:27,052 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-2c40e7a1196181322a69fc086d6f149f-b324e92655e6d305-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:42:27,063 - INFO - 192.168.1.32 - - [12/Aug/2025 11:42:27] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 11:43:01,464 - INFO - Webhook received at 2025-08-12 11:43:01
+2025-08-12 11:43:01,464 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-96669d6bd4b8f8125257ac508251e11c-f74b8732f4f6232b-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 11:43:01,474 - INFO - 192.168.1.32 - - [12/Aug/2025 11:43:01] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:35:12,835 - INFO - Webhook received at 2025-08-12 15:35:12
+2025-08-12 15:35:12,841 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-deb9d3b2320d265be29f255f2239f6da-dba52fa9d0019cf2-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '974'}
+2025-08-12 15:35:12,842 - INFO - Data: [
+  {
+    "Result": {
+      "DeviceCode": "862549045462382",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:35:13.2500561Z",
+      "UpdateTime": null
+    },
+    "Id": 1,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "862549045380733",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:35:13.2500561Z",
+      "UpdateTime": null
+    },
+    "Id": 2,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "G007593",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": 0,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:35:13.2500561Z",
+      "UpdateTime": null
+    },
+    "Id": 3,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  }
+]
+2025-08-12 15:35:12,846 - INFO - 192.168.1.32 - - [12/Aug/2025 15:35:12] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:38:23,472 - INFO - Webhook received at 2025-08-12 15:38:23
+2025-08-12 15:38:23,473 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-7e50590febd46befa050dab2e38680d6-4b1d70fc2c6375f9-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '974'}
+2025-08-12 15:38:23,474 - INFO - Data: [
+  {
+    "Result": {
+      "DeviceCode": "862549045462382",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:38:24.0355713Z",
+      "UpdateTime": null
+    },
+    "Id": 4,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "862549045380733",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:38:24.0355713Z",
+      "UpdateTime": null
+    },
+    "Id": 5,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "G007593",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": 0,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:38:24.0355713Z",
+      "UpdateTime": null
+    },
+    "Id": 6,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  }
+]
+2025-08-12 15:38:23,476 - INFO - 192.168.1.32 - - [12/Aug/2025 15:38:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:43:38,946 - INFO - Webhook received at 2025-08-12 15:43:38
+2025-08-12 15:43:38,949 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e6d0887447507ebfa4d1f2cdb5255a62-e279ae44ddba6f98-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '974'}
+2025-08-12 15:43:38,950 - INFO - Data: [
+  {
+    "Result": {
+      "DeviceCode": "862549045462382",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:43:39.4948292Z",
+      "UpdateTime": null
+    },
+    "Id": 7,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "862549045380733",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": null,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:43:39.4948292Z",
+      "UpdateTime": null
+    },
+    "Id": 8,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  },
+  {
+    "Result": {
+      "DeviceCode": "G007593",
+      "ShopCode": "PGG Ginno",
+      "LastHistoryStatus": 0,
+      "Condition": 0,
+      "CreateTime": "2025-08-12T08:43:39.4948292Z",
+      "UpdateTime": null
+    },
+    "Id": 9,
+    "Exception": null,
+    "Status": 5,
+    "IsCanceled": false,
+    "IsCompleted": true,
+    "IsCompletedSuccessfully": true,
+    "CreationOptions": 0,
+    "AsyncState": null,
+    "IsFaulted": false
+  }
+]
+2025-08-12 15:43:38,956 - INFO - 192.168.1.32 - - [12/Aug/2025 15:43:38] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:47:49,466 - INFO - Webhook received at 2025-08-12 15:47:49
+2025-08-12 15:47:49,467 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-02c18ae45bcf569277779f74cf1b0711-1a52cc251d35d0f9-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '488'}
+2025-08-12 15:47:49,467 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:47:49.9235281Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:47:49.9235281Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "LastHistoryStatus": 0,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:47:49.9235281Z",
+    "UpdateTime": null
+  }
+]
+2025-08-12 15:47:49,470 - INFO - 192.168.1.32 - - [12/Aug/2025 15:47:49] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:48:48,372 - INFO - Webhook received at 2025-08-12 15:48:48
+2025-08-12 15:48:48,372 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-caba6bdfadaacd59dc1bf6924c4ba5c7-26cd8256353e9b76-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '324'}
+2025-08-12 15:48:48,373 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G014910",
+    "ShopCode": "PGG Ginno Test",
+    "LastHistoryStatus": null,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T08:48:48.9202245Z"
+  },
+  {
+    "Type": 2,
+    "DeviceCode": "G006992",
+    "ShopCode": "PGG Ginno Test",
+    "LastHistoryStatus": 0,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T08:48:48.9202245Z"
+  }
+]
+2025-08-12 15:48:48,376 - INFO - 192.168.1.32 - - [12/Aug/2025 15:48:48] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:48:58,846 - INFO - Webhook received at 2025-08-12 15:48:58
+2025-08-12 15:48:58,847 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-f397294ae891bae09c65d2cc05027076-3caedd66226de07c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '159'}
+2025-08-12 15:48:58,848 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "LastHistoryStatus": null,
+    "Condition": 1,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T08:48:59.4069136Z"
+  }
+]
+2025-08-12 15:48:58,849 - INFO - 192.168.1.32 - - [12/Aug/2025 15:48:58] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:50:13,257 - INFO - Webhook received at 2025-08-12 15:50:13
+2025-08-12 15:50:13,257 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bb1e30b0fa92b1f40722eb89518c5ad2-9953566f39825eb4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '156'}
+2025-08-12 15:50:13,257 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "LastHistoryStatus": 1,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T08:50:13.8197189Z"
+  }
+]
+2025-08-12 15:50:13,258 - INFO - 192.168.1.32 - - [12/Aug/2025 15:50:13] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:57:05,355 - INFO - Webhook received at 2025-08-12 15:57:05
+2025-08-12 15:57:05,355 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-72a469fd45e151fa13692fbb4338dc51-e15899cf0743a208-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '145'}
+2025-08-12 15:57:05,355 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T08:57:05.8969307Z"
+  }
+]
+2025-08-12 15:57:05,356 - INFO - 192.168.1.32 - - [12/Aug/2025 15:57:05] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 15:57:39,170 - INFO - Webhook received at 2025-08-12 15:57:39
+2025-08-12 15:57:39,171 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-c7f2bc46ecd53bde4f856f05d678e8b7-5be8991e9750fab0-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '455'}
+2025-08-12 15:57:39,171 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": null,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:57:39.7303223Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": null,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:57:39.7303223Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T08:57:39.7303223Z",
+    "UpdateTime": null
+  }
+]
+2025-08-12 15:57:39,173 - INFO - 192.168.1.32 - - [12/Aug/2025 15:57:39] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 16:06:04,603 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-12 16:06:04,603 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-12 16:06:04,606 - INFO -  * Restarting with stat
+2025-08-12 16:06:04,963 - WARNING -  * Debugger is active!
+2025-08-12 16:06:04,987 - INFO -  * Debugger PIN: 319-634-860
+2025-08-12 16:06:09,773 - INFO - Webhook received at 2025-08-12 16:06:09
+2025-08-12 16:06:09,773 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-62f25101e77e5db6a2d56d3a90913bf7-de7353ed0e1e2f3c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '765'}
+2025-08-12 16:06:09,774 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": false,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:00:29.0413847Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": false,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:00:29.0413847Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": true,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:00:29.0413847Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 2,
+    "DeviceCode": "G014910",
+    "ShopCode": "PGG Ginno Test",
+    "Status": false,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T09:02:41.7282566Z"
+  },
+  {
+    "Type": 2,
+    "DeviceCode": "G006992",
+    "ShopCode": "PGG Ginno Test",
+    "Status": true,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T09:02:41.7282566Z"
+  }
+]
+2025-08-12 16:06:09,777 - INFO - 192.168.1.32 - - [12/Aug/2025 16:06:09] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 16:51:37,854 - INFO - Webhook received at 2025-08-12 16:51:37
+2025-08-12 16:51:37,866 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-d71d34806826efb987fcc621ac0efa27-d87978238515829d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '449'}
+2025-08-12 16:51:37,869 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:51:38.2613336Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:51:38.2613336Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2025-08-12T09:51:38.2613336Z",
+    "UpdateTime": null
+  }
+]
+2025-08-12 16:51:37,874 - INFO - 192.168.1.32 - - [12/Aug/2025 16:51:37] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 17:09:46,578 - INFO - Webhook received at 2025-08-12 17:09:46
+2025-08-12 17:09:46,579 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-90d2b967c6dc4256455d24322576315a-6c61d3d96d1676c1-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '321'}
+2025-08-12 17:09:46,580 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G014910",
+    "ShopCode": "PGG Ginno Test",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": null,
+    "UpdateTime": "2025-08-12T10:09:46.9505109Z"
+  },
+  {
+    "Type": 2,
+    "DeviceCode": "G006992",
+    "ShopCode": "PGG Ginno Test",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2023-08-09T10:36:26.2682",
+    "UpdateTime": "2025-08-12T10:09:46.9505109Z"
+  }
+]
+2025-08-12 17:09:46,583 - INFO - 192.168.1.32 - - [12/Aug/2025 17:09:46] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 17:13:56,662 - INFO - Webhook received at 2025-08-12 17:13:56
+2025-08-12 17:13:56,662 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-3b3d4729d8d1ed8c65db44d6492660b8-c1a5cc6961f3b0c5-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '169'}
+2025-08-12 17:13:56,662 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 1,
+    "CreateTime": "2023-07-25T04:19:04.081976",
+    "UpdateTime": "2025-08-12T10:13:57.2494226Z"
+  }
+]
+2025-08-12 17:13:56,663 - INFO - 192.168.1.32 - - [12/Aug/2025 17:13:56] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 17:14:52,622 - INFO - Webhook received at 2025-08-12 17:14:52
+2025-08-12 17:14:52,622 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-4b5b63f4b8bc2c717cff7b12b62c44e5-6113d533164af514-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '169'}
+2025-08-12 17:14:52,623 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2023-07-25T04:19:04.081976",
+    "UpdateTime": "2025-08-12T10:14:53.2156824Z"
+  }
+]
+2025-08-12 17:14:52,624 - INFO - 192.168.1.32 - - [12/Aug/2025 17:14:52] "POST /webhook HTTP/1.1" 200 -
+2025-08-12 17:30:56,139 - INFO - Webhook received at 2025-08-12 17:30:56
+2025-08-12 17:30:56,140 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-928e7b220ea5c3925370834ce2503fdc-a8bc621ac3d12b9d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '168'}
+2025-08-12 17:30:56,141 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "Status": 0,
+    "Condition": 0,
+    "CreateTime": "2023-07-25T04:19:04.081976",
+    "UpdateTime": "2025-08-12T10:30:56.642247Z"
+  }
+]
+2025-08-12 17:30:56,142 - INFO - 192.168.1.32 - - [12/Aug/2025 17:30:56] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 11:40:29,182 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-13 11:40:29,184 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 11:40:29,186 - INFO -  * Restarting with stat
+2025-08-13 11:40:29,588 - WARNING -  * Debugger is active!
+2025-08-13 11:40:29,593 - INFO -  * Debugger PIN: 319-634-860
+2025-08-13 11:43:09,365 - INFO - Webhook received at 2025-08-13 11:43:09
+2025-08-13 11:43:09,365 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-bfc278be3242c5198a34aa20295f2880-a5103f7e0f274e0c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '449'}
+2025-08-13 11:43:09,366 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:43:09.8839144Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:43:09.8839144Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:43:09.8839144Z",
+    "UpdateTime": null
+  }
+]
+2025-08-13 11:43:09,369 - INFO - 192.168.1.32 - - [13/Aug/2025 11:43:09] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 12:18:23,592 - INFO - Webhook received at 2025-08-13 12:18:23
+2025-08-13 12:18:23,596 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-955cf41dc213c7e52dd66dfc00603631-71c7f11696f3c274-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '897'}
+2025-08-13 12:18:23,600 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:33:20.8171559Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:33:20.8171559Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:33:20.8171559Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:38:14.3543396Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:38:14.3543396Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T04:38:14.3543396Z",
+    "UpdateTime": null
+  }
+]
+2025-08-13 12:18:23,643 - INFO - 192.168.1.32 - - [13/Aug/2025 12:18:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 12:22:18,046 - INFO - Webhook received at 2025-08-13 12:22:18
+2025-08-13 12:22:18,047 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-795525cfc89a27ab4dda9240654e3a50-820f82940abb7d97-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '449'}
+2025-08-13 12:22:18,047 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T05:22:18.8616861Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T05:22:18.8616861Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-13T05:22:18.8616861Z",
+    "UpdateTime": null
+  }
+]
+2025-08-13 12:22:18,049 - INFO - 192.168.1.32 - - [13/Aug/2025 12:22:18] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 12:24:17,811 - INFO - Webhook received at 2025-08-13 12:24:17
+2025-08-13 12:24:17,812 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-44970091666a347cc05569a082d81c0e-2e0433df6aa3f87b-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '340'}
+2025-08-13 12:24:17,813 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G014910",
+    "ShopCode": "PGG Ginno Test",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2024-11-13T08:23:07.390773",
+    "UpdateTime": "2025-08-13T05:24:18.6541468Z"
+  },
+  {
+    "Type": 2,
+    "DeviceCode": "G006992",
+    "ShopCode": "PGG Ginno Test",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T05:24:18.6541468Z"
+  }
+]
+2025-08-13 12:24:17,815 - INFO - 192.168.1.32 - - [13/Aug/2025 12:24:17] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 13:27:59,621 - INFO - Webhook received at 2025-08-13 13:27:59
+2025-08-13 13:27:59,626 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e31f1dee3d516a0740d2490cb233bd7f-4fe474370889bddc-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-13 13:27:59,627 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 2,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T06:28:00.4142224Z"
+  }
+]
+2025-08-13 13:27:59,631 - INFO - 192.168.1.32 - - [13/Aug/2025 13:27:59] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 13:28:23,711 - INFO - Webhook received at 2025-08-13 13:28:23
+2025-08-13 13:28:23,711 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-7b443503111288b253c19ba7960ac9b0-8e6f9429f0f80dd4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-13 13:28:23,712 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007021",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T06:28:24.5447443Z"
+  }
+]
+2025-08-13 13:28:23,713 - INFO - 192.168.1.32 - - [13/Aug/2025 13:28:23] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 16:54:33,088 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\ActiveOrRetrive_wh_server.py', reloading
+2025-08-13 16:54:33,391 - INFO -  * Restarting with stat
+2025-08-13 16:54:34,821 - WARNING -  * Debugger is active!
+2025-08-13 16:54:34,856 - INFO -  * Debugger PIN: 319-634-860
+2025-08-13 17:09:10,233 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://192.168.4.229:6000
+2025-08-13 17:09:10,234 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-13 17:09:10,237 - INFO -  * Restarting with stat
+2025-08-13 17:09:10,725 - WARNING -  * Debugger is active!
+2025-08-13 17:09:10,739 - INFO -  * Debugger PIN: 319-634-860
+2025-08-13 17:12:46,803 - INFO - Webhook received at 2025-08-13 17:12:46
+2025-08-13 17:12:46,804 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-d2f93b6f731948f6ae87935912d5b437-078a2932f95b5081-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-13 17:12:46,806 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 2,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T10:12:45.8419154Z"
+  }
+]
+2025-08-13 17:12:46,807 - INFO - 192.168.1.32 - - [13/Aug/2025 17:12:46] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 17:30:46,790 - INFO - Webhook received at 2025-08-13 17:30:46
+2025-08-13 17:30:46,797 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-11796f491571bec16c6505c085c9d2c8-d057a10bcb4a018e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '161'}
+2025-08-13 17:30:46,798 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 2,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T10:30:47.737754Z"
+  }
+]
+2025-08-13 17:30:46,800 - INFO - 192.168.1.32 - - [13/Aug/2025 17:30:46] "POST /webhook HTTP/1.1" 200 -
+2025-08-13 17:42:18,040 - INFO - Webhook received at 2025-08-13 17:42:18
+2025-08-13 17:42:18,045 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-228bb81f674533101d528b217ac75f83-486d1312fe88a1ee-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '161'}
+2025-08-13 17:42:18,046 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 2,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-13T10:42:18.999795Z"
+  }
+]
+2025-08-13 17:42:18,049 - INFO - 192.168.1.32 - - [13/Aug/2025 17:42:18] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 09:09:18,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://192.168.4.229:6000
+2025-08-14 09:09:18,263 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-14 09:09:18,265 - INFO -  * Restarting with stat
+2025-08-14 09:09:19,073 - WARNING -  * Debugger is active!
+2025-08-14 09:09:19,080 - INFO -  * Debugger PIN: 319-634-860
+2025-08-14 09:09:21,507 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-14 09:09:21,507 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-14 09:09:21,515 - INFO -  * Restarting with stat
+2025-08-14 09:09:21,862 - WARNING -  * Debugger is active!
+2025-08-14 09:09:21,866 - INFO -  * Debugger PIN: 319-634-860
+2025-08-14 09:09:47,954 - INFO - Webhook received at 2025-08-14 09:09:47
+2025-08-14 09:09:47,955 - INFO - Webhook received at 2025-08-14 09:09:47
+2025-08-14 09:09:47,955 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-5d7ac10bfa2356bfb3fe0d0c87cf0478-38c2745dd6767d0f-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 09:09:47,956 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "17",
+    "Status": 0,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-14T02:09:46.7877895Z",
+    "DisactivatedTime": null,
+    "UpdatedTime": null,
+    "Reason": null,
+    "Note": null
+  }
+]
+2025-08-14 09:09:47,956 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 2,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T02:09:46.7877895Z"
+  }
+]
+2025-08-14 09:09:47,959 - INFO - 192.168.1.32 - - [14/Aug/2025 09:09:47] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 09:09:47,959 - INFO - 192.168.1.32 - - [14/Aug/2025 09:09:47] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 09:12:18,562 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://192.168.4.229:6000
+2025-08-14 09:12:18,568 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-14 09:12:18,573 - INFO -  * Restarting with stat
+2025-08-14 09:12:18,943 - WARNING -  * Debugger is active!
+2025-08-14 09:12:18,945 - INFO -  * Debugger PIN: 319-634-860
+2025-08-14 09:12:22,386 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-14 09:12:22,387 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-14 09:12:22,389 - INFO -  * Restarting with stat
+2025-08-14 09:12:22,737 - WARNING -  * Debugger is active!
+2025-08-14 09:12:22,740 - INFO -  * Debugger PIN: 319-634-860
+2025-08-14 09:30:55,870 - INFO - Webhook received at 2025-08-14 09:30:55
+2025-08-14 09:30:55,874 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-eb26f9b25009876e230657c8b6ac1ca4-f03d7be65c6de6a8-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 09:30:55,875 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 2,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T02:30:57.5903641Z"
+  }
+]
+2025-08-14 09:30:55,878 - INFO - 192.168.1.32 - - [14/Aug/2025 09:30:55] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 09:30:55,880 - INFO - Webhook received at 2025-08-14 09:30:55
+2025-08-14 09:30:55,882 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-eb26f9b25009876e230657c8b6ac1ca4-c3aa1ac694344809-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '349'}
+2025-08-14 09:30:55,883 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "17",
+    "Status": 2,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-08T03:09:55.089011",
+    "DisactivatedTime": "2025-08-14T02:30:57.5943473Z",
+    "UpdatedTime": null,
+    "Reason": "An test thu hoi #2",
+    "Note": "An test thu hoi #2"
+  }
+]
+2025-08-14 09:30:55,885 - INFO - 192.168.1.32 - - [14/Aug/2025 09:30:55] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:12:02,439 - INFO - Webhook received at 2025-08-14 10:12:02
+2025-08-14 10:12:02,445 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-1706b89b571d6019a22681de7ba05d14-05ffe1c02288f74c-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 10:12:02,446 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 2,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T03:12:04.1490613Z"
+  }
+]
+2025-08-14 10:12:02,447 - INFO - Webhook received at 2025-08-14 10:12:02
+2025-08-14 10:12:02,448 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-1706b89b571d6019a22681de7ba05d14-083d913d4fdb1965-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '335'}
+2025-08-14 10:12:02,449 - INFO - 192.168.1.32 - - [14/Aug/2025 10:12:02] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:12:02,449 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "Xe máy",
+    "Status": 2,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-08T03:09:55.089011",
+    "DisactivatedTime": "2025-08-14T03:12:04.1518226Z",
+    "UpdatedTime": null,
+    "Reason": 3,
+    "Note": "An test thu hoi #2"
+  }
+]
+2025-08-14 10:12:02,454 - INFO - 192.168.1.32 - - [14/Aug/2025 10:12:02] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:13:21,208 - INFO - Webhook received at 2025-08-14 10:13:21
+2025-08-14 10:13:21,264 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-e18487b12e25506c1eba3e3d0f3f61dc-7ad789a623d06ad4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 10:13:21,264 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T03:13:22.9653506Z"
+  }
+]
+2025-08-14 10:13:21,265 - INFO - 192.168.1.32 - - [14/Aug/2025 10:13:21] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:13:21,208 - INFO - Webhook received at 2025-08-14 10:13:21
+2025-08-14 10:13:21,270 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-e18487b12e25506c1eba3e3d0f3f61dc-25cae0bdf57c985e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '335'}
+2025-08-14 10:13:21,271 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "Xe máy",
+    "Status": 2,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-08T03:09:55.089011",
+    "DisactivatedTime": "2025-08-14T03:13:22.9688716Z",
+    "UpdatedTime": null,
+    "Reason": 1,
+    "Note": "An test thu hoi #2"
+  }
+]
+2025-08-14 10:13:21,272 - INFO - 192.168.1.32 - - [14/Aug/2025 10:13:21] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:15:22,408 - INFO - Webhook received at 2025-08-14 10:15:22
+2025-08-14 10:15:22,409 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-fd7778c1dc0ee60325eada45f4991fb5-03a610990bb8df1e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 10:15:22,409 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 2,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T03:15:23.9690171Z"
+  }
+]
+2025-08-14 10:15:22,410 - INFO - 192.168.1.32 - - [14/Aug/2025 10:15:22] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 10:15:22,420 - INFO - Webhook received at 2025-08-14 10:15:22
+2025-08-14 10:15:22,421 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-fd7778c1dc0ee60325eada45f4991fb5-2d309bec3e5af3f4-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '295'}
+2025-08-14 10:15:22,422 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "Xe máy",
+    "Status": 1,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-14T03:15:23.9690171Z",
+    "DisactivatedTime": null,
+    "UpdatedTime": null,
+    "Reason": 0,
+    "Note": null
+  }
+]
+2025-08-14 10:15:22,424 - INFO - 192.168.1.32 - - [14/Aug/2025 10:15:22] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 16:07:01,773 - INFO - Webhook received at 2025-08-14 16:07:01
+2025-08-14 16:07:01,782 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-6520890d0eb4231c73bb8fcb494b7de5-97cde7afbcee9841-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 16:07:01,783 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T09:07:04.1172254Z"
+  }
+]
+2025-08-14 16:07:01,783 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007020",
+    "ContractCode": "HD_TEST_080825",
+    "CustomerName": "TEST_080825",
+    "VehiclePlate": "38P1-537426",
+    "CategoryCode": "Xe máy",
+    "Status": 2,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2025-08-08T03:09:55.446847",
+    "DisactivatedTime": "2025-08-14T09:07:04.1438146Z",
+    "UpdatedTime": null,
+    "Reason": 1,
+    "Note": "An test thu hoi #2"
+  }
+]
+2025-08-14 16:07:01,785 - INFO - 192.168.1.32 - - [14/Aug/2025 16:07:01] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 16:07:01,788 - INFO - 192.168.1.32 - - [14/Aug/2025 16:07:01] "POST /webhook HTTP/1.1" 200 -
+2025-08-14 16:15:24,872 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-14 16:15:24,873 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-14 16:15:24,876 - INFO -  * Restarting with stat
+2025-08-14 16:15:25,285 - WARNING -  * Debugger is active!
+2025-08-14 16:15:25,306 - INFO -  * Debugger PIN: 319-634-860
+2025-08-14 16:15:29,946 - INFO - Webhook received at 2025-08-14 16:15:29
+2025-08-14 16:15:29,946 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-11ce12f39134681754db2656ba9c41d4-706ace0d2a156188-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-14 16:15:29,947 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G007443",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-14T09:15:32.4161666Z"
+  }
+]
+2025-08-14 16:15:29,948 - INFO - 192.168.1.32 - - [14/Aug/2025 16:15:29] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 09:31:19,142 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://192.168.4.229:6000
+2025-08-15 09:31:19,143 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-15 09:31:19,145 - INFO -  * Restarting with stat
+2025-08-15 09:31:19,646 - WARNING -  * Debugger is active!
+2025-08-15 09:31:19,667 - INFO -  * Debugger PIN: 319-634-860
+2025-08-15 09:31:43,640 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-15 09:31:43,644 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-15 09:31:43,648 - INFO -  * Restarting with stat
+2025-08-15 09:31:44,759 - WARNING -  * Debugger is active!
+2025-08-15 09:31:44,770 - INFO -  * Debugger PIN: 319-634-860
+2025-08-15 09:32:56,416 - INFO - Webhook received at 2025-08-15 09:32:56
+2025-08-15 09:32:56,417 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-5483d0e4cb11036e29d7824e0497425e-36c0ccf433a0e259-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '353'}
+2025-08-15 09:32:56,418 - INFO - Data: [
+  {
+    "Type": 3,
+    "DeviceCode": "G000244",
+    "ContractCode": null,
+    "PawnCode": "HD1_DAI_2311_LB_1test#1",
+    "CustomerName": "HHD",
+    "VehiclePlate": "1234",
+    "CategoryCode": "Ô tô",
+    "Status": 1,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2024-06-07T07:12:45.499939",
+    "DisactivatedTime": null,
+    "UpdatedTime": "2025-08-15T02:32:57.1059985Z",
+    "Reason": 1,
+    "Note": "An test hop dong dao han #1"
+  }
+]
+2025-08-15 09:32:56,421 - INFO - 192.168.1.32 - - [15/Aug/2025 09:32:56] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 09:47:05,604 - INFO - Webhook received at 2025-08-15 09:47:05
+2025-08-15 09:47:05,608 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-9390a1bbc6d5991081065ef6372d62e8-cc35706e4e2a4b47-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '339'}
+2025-08-15 09:47:05,619 - INFO - Webhook received at 2025-08-15 09:47:05
+2025-08-15 09:47:05,620 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-9390a1bbc6d5991081065ef6372d62e8-e8057ecc3f80766a-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-15 09:47:05,623 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G000244",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 2,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-15T02:47:06.2648768Z"
+  }
+]
+2025-08-15 09:47:05,626 - INFO - 192.168.1.32 - - [15/Aug/2025 09:47:05] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 09:47:05,799 - INFO - 192.168.1.32 - - [15/Aug/2025 09:47:05] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 09:49:39,712 - INFO - Webhook received at 2025-08-15 09:49:39
+2025-08-15 09:49:39,714 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-635cd41712eb073f82f5acaeeb212284-2457a730d3fa2c3e-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '162'}
+2025-08-15 09:49:39,715 - INFO - Data: [
+  {
+    "Type": 2,
+    "DeviceCode": "G000244",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 2,
+    "CreateTime": "0001-01-01T00:00:00",
+    "UpdateTime": "2025-08-15T02:49:40.4153981Z"
+  }
+]
+2025-08-15 09:49:39,715 - INFO - Webhook received at 2025-08-15 09:49:39
+2025-08-15 09:49:39,716 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-635cd41712eb073f82f5acaeeb212284-fde078549b66acd7-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '339'}
+2025-08-15 09:49:39,716 - INFO - 192.168.1.32 - - [15/Aug/2025 09:49:39] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 09:49:39,726 - INFO - 192.168.1.32 - - [15/Aug/2025 09:49:39] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 10:10:53,901 - INFO - Webhook received at 2025-08-15 10:10:53
+2025-08-15 10:10:53,903 - INFO - Headers: {'Host': '192.168.4.229:6000', 'Traceparent': '00-56b6d168d78933d6d8dc3c346cb2a635-328c7e7bb545cb32-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '360'}
+2025-08-15 10:10:53,903 - INFO - Data: [
+  {
+    "Type": 3,
+    "DeviceCode": "G000244",
+    "ContractCode": null,
+    "PawnCode": "HD1_DAI_2311_LB_1",
+    "CustomerName": "HHD",
+    "VehiclePlate": "12345",
+    "CategoryCode": "Ô tô",
+    "Status": 1,
+    "ShopCode": "PGG Ginno",
+    "ActivedTime": "2024-06-07T07:12:45.499939",
+    "DisactivatedTime": null,
+    "UpdatedTime": "2025-08-15T03:10:54.5881968Z",
+    "Reason": 4,
+    "Note": "An test chinh sua thong tin hop dong #1"
+  }
+]
+2025-08-15 10:10:53,917 - INFO - 192.168.1.32 - - [15/Aug/2025 10:10:53] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 11:27:09,597 - INFO - Webhook received at 2025-08-15 11:27:09
+2025-08-15 11:27:09,602 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-1cbfda39701ff4d9066fde26c53b699e-a0a34b115fde17c9-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '446'}
+2025-08-15 11:27:09,603 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T04:27:10.165889Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T04:27:10.165889Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T04:27:10.165889Z",
+    "UpdateTime": null
+  }
+]
+2025-08-15 11:27:09,608 - INFO - 192.168.1.32 - - [15/Aug/2025 11:27:09] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 15:57:59,622 - INFO - Webhook received at 2025-08-15 15:57:59
+2025-08-15 15:57:59,639 - INFO - Headers: {'Host': '192.168.4.229:6000', 'X-Gapo-Api-Key': '5dca5dec1ccb4445a501a1b7407c7d29', 'Traceparent': '00-b4a4556b2486bd0b419593501dc83723-8c0583a7d8666044-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '487'}
+2025-08-15 15:57:59,640 - INFO - Data: {
+  "collab_id": 7005049350530566144,
+  "bot_id": 5844770830816384526,
+  "body": {
+    "type": "text",
+    "text": "[{\"Type\":1,\"DeviceCode\":\"G007020\",\"ContractCode\":\"HD2_TEST_080825\",\"PawnCode\":\"HD_TEST_080825\",\"CustomerName\":\"TEST_080825\",\"VehiclePlate\":\"38P1-537426\",\"CategoryCode\":\"Xe máy\",\"Status\":1,\"ShopCode\":\"PGG Ginno\",\"ActivedTime\":\"2025-08-15T06:57:59.9116272Z\",\"DisactivatedTime\":null,\"UpdatedTime\":null,\"Reason\":0,\"Note\":null}]",
+    "is_markdown_text": true
+  }
+}
+2025-08-15 15:57:59,643 - INFO - Webhook received at 2025-08-15 15:57:59
+2025-08-15 15:57:59,648 - INFO - 192.168.1.32 - - [15/Aug/2025 15:57:59] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 15:57:59,651 - INFO - Webhook received at 2025-08-15 15:57:59
+2025-08-15 15:57:59,654 - INFO - Headers: {'Host': '192.168.4.229:6000', 'X-Gapo-Api-Key': '5dca5dec1ccb4445a501a1b7407c7d29', 'Traceparent': '00-29efc1d466b53ca837ba4a8bf37a8cd4-6a21764f7b65a368-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '487'}
+2025-08-15 15:57:59,655 - INFO - Headers: {'Host': '192.168.4.229:6000', 'X-Gapo-Api-Key': '5dca5dec1ccb4445a501a1b7407c7d29', 'Traceparent': '00-b4a4556b2486bd0b419593501dc83723-f425c1d12ceb3c3d-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '487'}
+2025-08-15 15:57:59,656 - INFO - Data: {
+  "collab_id": 7005049350530566144,
+  "bot_id": 5844770830816384526,
+  "body": {
+    "type": "text",
+    "text": "[{\"Type\":1,\"DeviceCode\":\"G007020\",\"ContractCode\":\"HD2_TEST_080825\",\"PawnCode\":\"HD_TEST_080825\",\"CustomerName\":\"TEST_080825\",\"VehiclePlate\":\"38P1-537426\",\"CategoryCode\":\"Xe máy\",\"Status\":1,\"ShopCode\":\"PGG Ginno\",\"ActivedTime\":\"2025-08-15T06:59:14.2244734Z\",\"DisactivatedTime\":null,\"UpdatedTime\":null,\"Reason\":0,\"Note\":null}]",
+    "is_markdown_text": true
+  }
+}
+2025-08-15 15:57:59,659 - INFO - Data: {
+  "collab_id": 7005049350530566144,
+  "bot_id": 5844770830816384526,
+  "body": {
+    "type": "text",
+    "text": "[{\"Type\":1,\"DeviceCode\":\"G007020\",\"ContractCode\":\"HD2_TEST_080825\",\"PawnCode\":\"HD_TEST_080825\",\"CustomerName\":\"TEST_080825\",\"VehiclePlate\":\"38P1-537426\",\"CategoryCode\":\"Xe máy\",\"Status\":1,\"ShopCode\":\"PGG Ginno\",\"ActivedTime\":\"2025-08-15T06:57:59.9116272Z\",\"DisactivatedTime\":null,\"UpdatedTime\":null,\"Reason\":0,\"Note\":null}]",
+    "is_markdown_text": true
+  }
+}
+2025-08-15 15:57:59,660 - INFO - 192.168.1.32 - - [15/Aug/2025 15:57:59] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 15:57:59,671 - INFO - 192.168.1.32 - - [15/Aug/2025 15:57:59] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 16:04:21,783 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.4.229:5000
+2025-08-15 16:04:21,784 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-15 16:04:21,786 - INFO -  * Restarting with stat
+2025-08-15 16:04:22,262 - WARNING -  * Debugger is active!
+2025-08-15 16:04:22,269 - INFO -  * Debugger PIN: 319-634-860
+2025-08-15 16:07:03,835 - INFO - Webhook received at 2025-08-15 16:07:03
+2025-08-15 16:07:03,835 - INFO - Headers: {'Host': '192.168.4.229:5000', 'Traceparent': '00-94bb885869428c7f4e9bd935f0523c6d-a2c1b2c538af1daa-00', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '449'}
+2025-08-15 16:07:03,835 - INFO - Data: [
+  {
+    "Type": 1,
+    "DeviceCode": "862549045462382",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T09:07:04.5430438Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "862549045380733",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T09:07:04.5430438Z",
+    "UpdateTime": null
+  },
+  {
+    "Type": 1,
+    "DeviceCode": "G007593",
+    "ShopCode": "PGG Ginno",
+    "Status": 1,
+    "Condition": 1,
+    "CreateTime": "2025-08-15T09:07:04.5430438Z",
+    "UpdateTime": null
+  }
+]
+2025-08-15 16:07:04,181 - INFO - Forward to Gapo - status: 200, body: {"data":{"event_id":"05293948-8e51-4d28-9164-c9a02aee237e","thread_id":1753933936441,"sub_thread_id":0,"message_id":120,"client_id":""}}
+2025-08-15 16:07:04,183 - INFO - 192.168.1.32 - - [15/Aug/2025 16:07:04] "POST /webhook HTTP/1.1" 200 -
+2025-08-15 16:08:54,201 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\wh_server.py', reloading
+2025-08-15 16:08:54,268 - INFO -  * Restarting with stat
+2025-08-15 16:08:55,677 - WARNING -  * Debugger is active!
+2025-08-15 16:08:55,693 - INFO -  * Debugger PIN: 319-634-860
+2025-08-15 16:08:58,379 - INFO -  * Detected change in 'E:\\Repos\\webhook-server\\ActiveOrRetrive_wh_server.py', reloading
+2025-08-15 16:08:58,534 - INFO -  * Restarting with stat
+2025-08-15 16:08:59,091 - WARNING -  * Debugger is active!
+2025-08-15 16:08:59,094 - INFO -  * Debugger PIN: 319-634-860
+2025-08-15 16:09:02,728 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://192.168.4.229:6000
+2025-08-15 16:09:02,729 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-15 16:09:02,731 - INFO -  * Restarting with stat
+2025-08-15 16:09:03,086 - WARNING -  * Debugger is active!
+2025-08-15 16:09:03,090 - INFO -  * Debugger PIN: 319-634-860
