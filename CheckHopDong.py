@@ -35,32 +35,27 @@ def handle_webhook():
         logging.info(f"Headers: {headers}")
         logging.info(f"Data: {json.dumps(data, indent=2, ensure_ascii=False)}")
         
-        # Xử lý dữ liệu (tùy chỉnh theo nhu cầu)
-        if isinstance(data, list):
-            response_data = [process_webhook_data(item) for item in data]
-        else:
-            response_data = process_webhook_data(data)
-        
-        # Forward dữ liệu đã nhận sang Gapo endpoint
-        forwarded, forward_response = forward_to_gapo(data)
+        # Fake response trả về như yêu cầu
+        fake_response = {
+            "ErrorCode": 401,
+            "Message": "Mã hợp đồng không hợp lệ",
+            "Data": {
+                "ContractCode": "HD2023001",
+                "PawnCode": ["GNN2023001"],
+                "VehiclePlate": "51H-12345",
+                "CategoryCode": "15",
+                "CustomerName": "Nguyen Van A",
+                "Status": 1
+            }
+        }
+        return jsonify(fake_response), 200
 
-        # Trả về response thành công
-        return jsonify({
-            'status': 'success',
-            'message': 'Webhook received successfully',
-            'timestamp': timestamp,
-            'processed_data': response_data,
-            'processed_data': response_data,
-            'forwarded_to_gapo': forwarded,
-            'gapo_response': forward_response
-        }), 200
-        
     except Exception as e:
         logging.error(f"Error processing webhook: {str(e)}")
         return jsonify({
             'status': 'error',
             'message': str(e)
-        }), 400
+        }),100
 
 def process_webhook_data(data):
     """
@@ -157,14 +152,14 @@ def handle_secure_webhook():
 
 if __name__ == '__main__':
     print("Starting Webhook Server...")
-    print("Webhook endpoint: http://localhost:6000/webhook")
-    print("Health check: http://localhost:6000/health")
-    print("Logs: http://localhost:6000/logs")
-    print("Secure webhook: http://localhost:6000/webhook-secure")
+    print("Webhook endpoint: http://localhost:8888/webhook")
+    print("Health check: http://localhost:8888/health")
+    print("Logs: http://localhost:8888/logs")
+    print("Secure webhook: http://localhost:8888/webhook-secure")
     
     # Chạy server
     app.run(
         host='192.168.1.32',  # Cho phép truy cập từ bên ngoài
-        port=6000,       # Cổng 6000
+        port=8888,       # Cổng 8888
         debug=True       # Bật debug mode để development
     )

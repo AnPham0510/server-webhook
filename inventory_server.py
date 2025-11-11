@@ -21,6 +21,162 @@ GAPO_API_KEY = '5dca5dec1ccb4445a501a1b7407c7d29'
 GAPO_COLLAB_ID = 7005049350530566144
 GAPO_BOT_ID = 5844770830816384526
 
+@app.route('/api/v2/Webhook/Chip/Upsert', methods=['POST'])
+def handle_upsert_webhook():
+    try:
+        # Lấy dữ liệu từ request
+        data = request.get_json()
+        headers = dict(request.headers)
+        
+        # Log thông tin webhook
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        logging.info(f"Webhook received at {timestamp}")
+        logging.info(f"Headers: {headers}")
+        logging.info(f"Data: {json.dumps(data, indent=2, ensure_ascii=False)}")
+        
+        # Xử lý dữ liệu (tùy chỉnh theo nhu cầu)
+        if isinstance(data, list):
+            response_data = [process_webhook_data(item) for item in data]
+        else:
+            response_data = process_webhook_data(data)
+        
+        # Forward dữ liệu đã nhận sang Gapo endpoint
+        forwarded, forward_response = forward_to_gapo(data)
+
+        # Trả về response thành công
+        return jsonify({
+            'status': 'success',
+            'message': 'Webhook received successfully',
+            'timestamp': timestamp,
+            'processed_data': response_data,
+            'processed_data': response_data,
+            'forwarded_to_gapo': forwarded,
+            'gapo_response': forward_response
+        }), 200
+        
+    except Exception as e:
+        logging.error(f"Error processing webhook: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 400
+@app.route('/api/v2/Webhook/Chip/ActiveOrRetrieve', methods=['POST'])
+def handle_activeOrRetrieve_webhook():
+    try:
+        # Lấy dữ liệu từ request
+        data = request.get_json()
+        headers = dict(request.headers)
+        
+        # Log thông tin webhook
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        logging.info(f"Webhook received at {timestamp}")
+        logging.info(f"Headers: {headers}")
+        logging.info(f"Data: {json.dumps(data, indent=2, ensure_ascii=False)}")
+        
+        # Xử lý dữ liệu (tùy chỉnh theo nhu cầu)
+        if isinstance(data, list):
+            response_data = [process_webhook_data(item) for item in data]
+        else:
+            response_data = process_webhook_data(data)
+        
+        # Forward dữ liệu đã nhận sang Gapo endpoint
+        forwarded, forward_response = forward_to_gapo(data)
+
+        # Trả về response thành công
+        return jsonify({
+            'status': 'success',
+            'message': 'Webhook received successfully',
+            'timestamp': timestamp,
+            'processed_data': response_data,
+            'processed_data': response_data,
+            'forwarded_to_gapo': forwarded,
+            'gapo_response': forward_response
+        }), 200
+        
+    except Exception as e:
+        logging.error(f"Error processing webhook: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 400
+@app.route('/api/v2/Webhook/Chip/Inventory', methods=['POST'])
+def handle_inventory_webhook():
+    try:
+        # Lấy dữ liệu từ request
+        data = request.get_json()
+        headers = dict(request.headers)
+        
+        # Log thông tin webhook
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        logging.info(f"Webhook received at {timestamp}")
+        logging.info(f"Headers: {headers}")
+        logging.info(f"Data: {json.dumps(data, indent=2, ensure_ascii=False)}")
+        
+        # Xử lý dữ liệu (tùy chỉnh theo nhu cầu)
+        if isinstance(data, list):
+            response_data = [process_webhook_data(item) for item in data]
+        else:
+            response_data = process_webhook_data(data)
+        
+        # Forward dữ liệu đã nhận sang Gapo endpoint
+        forwarded, forward_response = forward_to_gapo(data)
+
+        # Trả về response thành công
+        return jsonify({
+            'status': 'success',
+            'message': 'Webhook received successfully',
+            'timestamp': timestamp,
+            'processed_data': response_data,
+            'processed_data': response_data,
+            'forwarded_to_gapo': forwarded,
+            'gapo_response': forward_response
+        }), 200
+        
+    except Exception as e:
+        logging.error(f"Error processing webhook: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 400
+@app.route('/api/v2/Webhook/Chip/Report', methods=['POST'])
+def handle_report_webhook():
+    try:
+        # Lấy dữ liệu từ request
+        data = request.get_json()
+        headers = dict(request.headers)
+        
+        # Log thông tin webhook
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        logging.info(f"Webhook received at {timestamp}")
+        logging.info(f"Headers: {headers}")
+        logging.info(f"Data: {json.dumps(data, indent=2, ensure_ascii=False)}")
+        
+        # Xử lý dữ liệu (tùy chỉnh theo nhu cầu)
+        if isinstance(data, list):
+            response_data = [process_webhook_data(item) for item in data]
+        else:
+            response_data = process_webhook_data(data)
+        
+        # Forward dữ liệu đã nhận sang Gapo endpoint
+        forwarded, forward_response = forward_to_gapo(data)
+
+        # Trả về response thành công
+        return jsonify({
+            'status': 'success',
+            'message': 'Webhook received successfully',
+            'timestamp': timestamp,
+            'processed_data': response_data,
+            'processed_data': response_data,
+            'forwarded_to_gapo': forwarded,
+            'gapo_response': forward_response
+        }), 200
+        
+    except Exception as e:
+        logging.error(f"Error processing webhook: {str(e)}")
+        return jsonify({
+            'status': 'error',
+            'message': str(e)
+        }), 400
 # Route chính để nhận webhook
 @app.route('/webhook', methods=['POST'])
 def handle_webhook():
@@ -42,7 +198,7 @@ def handle_webhook():
             response_data = process_webhook_data(data)
         
         # Forward dữ liệu đã nhận sang Gapo endpoint
-        # forwarded, forward_response = forward_to_gapo(data)
+        forwarded, forward_response = forward_to_gapo(data)
 
         # Trả về response thành công
         return jsonify({
@@ -51,8 +207,8 @@ def handle_webhook():
             'timestamp': timestamp,
             'processed_data': response_data,
             'processed_data': response_data,
-            # 'forwarded_to_gapo': forwarded,
-            # 'gapo_response': forward_response
+            'forwarded_to_gapo': forwarded,
+            'gapo_response': forward_response
         }), 200
         
     except Exception as e:
@@ -124,7 +280,7 @@ def forward_to_gapo(data):
             'body': {
                 'type': 'text',
                 'text': text_value,
-                'is_markdown_text': True
+                'is_markdown_text': False
             }
         }
         headers = {
@@ -164,7 +320,7 @@ if __name__ == '__main__':
     
     # Chạy server
     app.run(
-        host='0.0.0.0',  # Cho phép truy cập từ bên ngoài
+        host='192.168.1.32',  # Cho phép truy cập từ bên ngoài
         port=8000,       # Cổng 8000
         debug=True       # Bật debug mode để development
     )
